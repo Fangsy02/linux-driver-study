@@ -6,3 +6,4 @@
 ### 进度日志
 - 2026.1.20：linux-6.18.5 源码解压 + make defconfig 成功
 - 2026.1.20：第一次内核编译完成（make -j4, x86_64 defconfig），生成 arch/x86/boot/bzImage
+- 2026.1.21：完成第一个内核模块 hello.ko 编写与编译（生成成功）；insmod 失败（Invalid module format，WSL2 默认内核限制），下一步配置自定义内核
