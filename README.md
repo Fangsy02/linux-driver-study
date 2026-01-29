@@ -9,3 +9,4 @@
 - 2026.1.21：完成第一个内核模块 hello.ko 编写与编译（生成成功）；insmod 失败（Invalid module format，WSL2 默认内核限制），下一步配置自定义内核
 * 2026.1.25：使用微软官方 WSL2 内核 6.6.121 成功替换（uname -r 确认）；重新编写 hello.c + Makefile；make 编译 hello.ko；sudo insmod 加载成功，dmesg 输出 "Hello from kernel!"；rmmod 卸载成功，输出 "Goodbye from kernel!" —— 第一个内核模块运行成功！
 * 2026.1.28：完成带参数 hello 模块（module_param）；完成简单杂项字符设备（misc_register，能 echo/cat /dev/myhello）
+* 2026.1.29：完成简单杂项字符设备（misc_register）；成功 echo/cat /dev/myhello 读写；dmesg 看到日志：
