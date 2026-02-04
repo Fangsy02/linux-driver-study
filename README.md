@@ -11,3 +11,4 @@
 * 2026.1.28：完成带参数 hello 模块（module_param）；完成简单杂项字符设备（misc_register，能 echo/cat /dev/myhello）
 * 2026.1.29：完成简单杂项字符设备（misc_register）；成功 echo/cat /dev/myhello 读写；dmesg 看到日志：
 * * 2026.2.3：完成简单 platform_driver + 自动注册虚拟平台设备；insmod 加载成功，dmesg 看到 probe/remove 输出（平台匹配机制跑通）
+* 2026.2.4：platform_driver 加资源获取（platform_get_resource）；虚拟设备注册成功，dmesg 看到 MEM (0x10000000-0x10000fff) 和 IRQ (42) 资源信息；probe/remove 全触发
